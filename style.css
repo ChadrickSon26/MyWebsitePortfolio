@@ -314,44 +314,41 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION  */
+#skills {
+  position: relative;
+  padding-top: 4vh;
+  margin: 0 10rem;
+  height: fit-content;
+  min-height: 60vh;
+}
 
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* EXPERIENCE SECTION (newly added) */
 #experience {
   position: relative;
+  padding-top: 4vh;
+  margin: 0 10rem;
+  height: fit-content;
+  min-height: 60vh;
 }
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
-.article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-}
-
-article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
-}
-
-article .icon {
-  cursor: default;
-}
 
 /* PROJECTS SECTION */
 
@@ -380,16 +377,16 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/* CONTACTS */
 
-#contact {
+#contacts {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
 }
 
-.contact-info-upper-container {
+.contacts-info-upper-container {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
@@ -400,7 +397,7 @@ article .icon {
   padding: 0.5rem;
 }
 
-.contact-info-container {
+.contacts-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,11 +405,11 @@ article .icon {
   margin: 1rem;
 }
 
-.contact-info-container p {
+.contacts-info-container p {
   font-size: larger;
 }
 
-.contact-icon {
+.contacts-icon {
   cursor: default;
 }
 
@@ -429,4 +426,55 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.experience-list {
+  text-align: left;
+  margin: 1rem auto 0;
+  padding-left: 1.5rem;
+  max-width: 600px;
+  color: rgb(85, 85, 85);
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+
+.skills-section {
+  padding: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+}
+
+.skills-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-card ul li {
+  margin: 6px 0;
+  font-size: 0.95em;
 }
