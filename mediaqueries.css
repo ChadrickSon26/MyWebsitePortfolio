@@ -6,7 +6,7 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
+  #contacts,
   #projects {
     height: fit-content;
   }
@@ -19,8 +19,8 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
+  #skills,
+  .skills-details-container {
     margin-top: 2rem;
   }
   #profile,
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
+  #contacts,
   footer {
     height: 40vh;
   }
@@ -64,18 +64,18 @@
     margin-bottom: 2rem;
   }
   .about-containers,
-  .contact-info-upper-container,
+  .contacts-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
+  .contacts-info-container {
     margin: 0;
   }
-  .contact-info-container p,
+  .contacts-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
-  .experience-sub-title {
+  .skills-sub-title {
     font-size: 1.25rem;
   }
   .logo {
