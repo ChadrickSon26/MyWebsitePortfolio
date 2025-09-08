@@ -478,3 +478,107 @@ footer p {
   margin: 6px 0;
   font-size: 0.95em;
 }
+
+.skills-list-with-logos {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list-with-logos li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+/* Make skill logos bigger */
+.skill-logo {
+  width: 50px;   /* adjust as needed */
+  height: 50px;  /* adjust as needed */
+  object-fit: contain;
+  margin-right: 10px; /* space between logo and text */
+  vertical-align: middle; /* align with text */
+}
+
+
+
+/* ===== EXPERIENCE LAYOUT & ALIGNMENT FIXES ===== */
+.experience-item {
+  display: flex;
+  align-items: flex-start;     /* top-align text and logo */
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* text left, logo right */
+.experience-item.normal {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* logo left, text right */
+.experience-item.reverse {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* --- Headings alignment --- */
+#experience .experience-item.normal .experience-sub-title {
+  text-align: left;
+  margin: 0 0 .5rem 0;
+}
+#experience .experience-item.reverse .experience-sub-title {
+  text-align: right;
+  margin: 0 0 .5rem 0;
+}
+
+/* --- Paragraphs alignment --- */
+#experience .experience-item.normal .experience-text { 
+  text-align: left; 
+}
+#experience .experience-item.reverse .experience-text { 
+  text-align: right; 
+}
+
+/* --- Bullet lists alignment (fixed so 2nd line matches 1st line) --- */
+#experience .experience-list {
+  margin: 1rem 0 0;
+  list-style-position: outside; /* keeps bullets outside text */
+  padding-left: 1.5rem;
+  padding-right: 0;
+  text-align: left; /* ensures bullets stack neatly */
+}
+
+/* Logo sizing */
+.experience-logo img {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+/* Mobile stack */
+@media screen and (max-width: 768px) {
+  .experience-item,
+  .experience-item.normal,
+  .experience-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #experience .experience-sub-title { 
+    text-align: center; 
+  }
+
+  /* Bullets stay left-aligned on mobile for readability */
+  #experience .experience-list { 
+    text-align: left; 
+    list-style-position: outside; 
+    padding-left: 1.5rem; 
+  }
+
+  .experience-logo img { 
+    margin-bottom: 1rem; 
+  }
+}
