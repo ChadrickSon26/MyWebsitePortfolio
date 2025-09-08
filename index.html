@@ -72,6 +72,8 @@
         </div>
       </div>
     </section>
+    
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -122,50 +124,90 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+
     <section id="experience">
-          <p class="section__text__p1">Explore My</p>
-          <h1 class="title">Experience</h1>
-          <div class="experience-details-container">
-            <div class="about-containers">
-              <!-- On-the-Job Training -->
-              <div class="details-container">
-                <h2 class="experience-sub-title">On-the-Job Training</h2>
-                <p><strong>Lemcon Philippines Inc.</strong><br>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers"> <!-- wrap everything like Projects -->
+          
+          <!-- On-the-Job Training -->
+          <div class="experience-item normal">
+            <div class="experience-text">
+              <h2 class="experience-sub-title">On-the-Job Training</h2>
+              <p><strong>Lemcon Philippines Inc.</strong><br>
                 Network Operations Center (NOC) Department<br>
-                Aug 2024 – Sep 2024 · 2 Months · Biñan, Laguna (On-site)</p>
-                <ul class="experience-list">
-                  <li>Set up network systems, configured access points, and upgraded POS systems.</li>
-                  <li>Collaborated with NOC engineers on troubleshooting and network performance testing.</li>
-                  <li>Participated in a full network audit at the Philippine Arena, ensuring accurate documentation and organization.</li>
-                </ul>
-              </div>
-              <!-- Other Work Experience -->
-              <div class="details-container">
-                <h2 class="experience-sub-title">Other Work Experience</h2>
-                <p><strong>Service Crew – Hâo Hē Milk Tea Shop</strong><br>
-                Mar 2020 – Mar 2021</p>
-              </div>
+                Aug 2024 – Sep 2024 · 2 Months · Biñan, Laguna (On-site)
+              </p>
+              <ul class="experience-list">
+                <li>Set up network systems, configured access points, and upgraded POS systems.</li>
+                <li>Collaborated with NOC engineers on troubleshooting and network performance testing.</li>
+                <li>Participated in a full network audit at the Philippine Arena, ensuring accurate documentation and organization.</li>
+              </ul>
+            </div>
+            <div class="experience-logo">
+              <img src="./assets/lemcon-logo.png" alt="Lemcon Logo">
             </div>
           </div>
-          <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
-        </section>
+
+          <!-- Other Work Experience -->
+          <div class="experience-item reverse">
+            <div class="experience-logo">
+              <img src="./assets/hao-he.jpg" alt="Hao He Logo">
+            </div>
+            <div class="experience-text">
+              <h2 class="experience-sub-title">Other Work Experience</h2>
+              <p><strong>Service Crew – Hâo Hē Milk Tea Shop</strong><br>
+                Mar 2020 – Mar 2021 · 1 Year · Carmona, Cavite
+              </p>
+              <ul class="experience-list">
+                <li>Gained experience in teamwork and customer service in a fast-paced environment.</li>
+                <li>Developed time management and multitasking skills.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div> <!-- end about-containers -->
+      </div> <!-- end experience-details-container -->
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
 
 
-        <section class="skills-section">
+    <section id="skills" class="skills-section">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Skills</h1>
       <div class="skills-grid">
         <div class="skills-card">
-          <h3>Programming Languages & Frameworks</h3>
+          <h3>Programming Languages</h3>
           <ul>
-            <li>Java – Experienced</li>
-            <li>C# – Intermediate</li>
-            <li>C++ – Intermediate</li>
-            <li>Python – Intermediate</li>
-            <li>.NET Framework – Basic</li>
+            <li>
+              <img src="./assets/java-logo.jpg" alt="Java Logo" class="skill-logo" />
+              Java – Experienced
+            </li>
+            <li>
+              <img src="./assets/python-logo.png" alt="Python Logo" class="skill-logo" />
+              Python – Intermediate
+            </li>
+            <li>
+              <img src="./assets/csharp-logo.png" alt="C# Logo" class="skill-logo" />
+              C# – Intermediate
+            </li>
+            <li>
+              <img src="./assets/c++-logo.png" alt="C++ Logo" class="skill-logo" />
+              C++ – Intermediate
+            </li>
+            <li>
+              <img src="./assets/net-logo.png" alt=".NET Logo" class="skill-logo" />
+              .NET Framework – Basic
+            </li>
           </ul>
         </div>
 
         <div class="skills-card">
-          <h3>Frontend & Web Development</h3>
+          <h3>Web & Database Development</h3>
           <ul>
             <li>HTML – Experienced</li>
             <li>CSS – Experienced</li>
@@ -175,7 +217,7 @@
         </div>
 
         <div class="skills-card">
-          <h3>Tools & IDEs</h3>
+          <h3>Development Tools & IDEs</h3>
           <ul>
             <li>Visual Studio Code</li>
             <li>IntelliJ IDEA</li>
@@ -197,6 +239,7 @@
           </ul>
         </div>
       </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
 
 
@@ -213,8 +256,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">MEDI-CAB: Automated Medicine Cabinet for Real-Time Tracking & 
-Expiry Alerts</h2>
+            <h2 class="skills-sub-title project-title">MEDI-CAB: Automated Medicine Cabinet 
+              for Real-Time Tracking & Expiry Alerts</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -287,6 +330,8 @@ Expiry Alerts</h2>
         onclick="location.href='./#contacts'"
       />
     </section>
+
+
     <section id="contacts">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contacts Me</h1>
