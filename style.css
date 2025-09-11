@@ -1,3 +1,6 @@
+
+
+
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -582,3 +585,379 @@ footer p {
     margin-bottom: 1rem; 
   }
 }
+
+
+
+/* ===== HOVER BACKGROUND FOR PICTURES & LOGOS ===== */
+
+/* For profile/about/project images */
+.section__pic-container img,
+.about-pic,
+.project-img {
+  transition: all 0.3s ease;
+  border-radius: 12px; /* keeps corners rounded */
+}
+
+.section__pic-container img:hover,
+.about-pic:hover,
+.project-img:hover {
+  background-color: rgba(0, 123, 255, 0.15); /* soft blue glow */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+  transform: scale(1.05); /* slight zoom */
+}
+
+/* For skill logos */
+.skill-logo {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 4px; /* gives some breathing space for bg */
+}
+
+.skill-logo:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transform: scale(1.1);
+}
+
+/* For experience logos */
+.experience-logo img {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  padding: 6px;
+}
+
+.experience-logo img:hover {
+  background-color: rgba(40, 167, 69, 0.15); /* green hover */
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.25);
+  transform: scale(1.05);
+}
+
+/* For socials & contact icons */
+.icon {
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.icon:hover {
+  background-color: rgba(108, 117, 125, 0.2); /* gray hover */
+  box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+  transform: scale(1.1);
+}
+
+/* ===== COLOR PALETTE =====
+#EEEEEE → Light Gray / Off-White
+#79A8AE → Muted Teal / Soft Blue-Green
+#31363F → Charcoal Gray / Dark Slate
+#222831 → Deep Grayish Black / Gunmetal
+*/
+
+/* GENERAL */
+body {
+  background-color: #EEEEEE;
+  color: #31363F;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #222831;
+  color: #EEEEEE;
+}
+
+.nav-links a {
+  color: #EEEEEE;
+}
+
+.nav-links a:hover {
+  color: #79A8AE;
+  text-decoration-color: #79A8AE;
+}
+
+.logo {
+  color: #79A8AE;
+}
+
+/* BUTTONS */
+.btn-color-1 {
+  background: #79A8AE;
+  border: none;
+  color: #EEEEEE;
+}
+
+.btn-color-1:hover {
+  background: #31363F;
+}
+
+.btn-color-2 {
+  border: 2px solid #79A8AE;
+  color: #31363F;
+  background: transparent;
+}
+
+.btn-color-2:hover {
+  background: #79A8AE;
+  color: #EEEEEE;
+}
+
+/* SECTIONS */
+section {
+  background-color: #EEEEEE;
+}
+
+.title {
+  color: #222831;
+}
+
+.section__text__p1,
+.section__text__p2 {
+  color: #31363F;
+}
+
+/* ABOUT CARDS */
+.details-container {
+  background: #FFFFFF;
+  border: 1px solid #79A8AE;
+  box-shadow: 0px 2px 8px rgba(49, 54, 63, 0.2);
+}
+
+.details-container h3 {
+  color: #222831;
+}
+
+/* SKILLS CARDS */
+.skills-card {
+  background: #FFFFFF;
+  border: 1px solid #79A8AE;
+  color: #31363F;
+}
+
+.skills-card h3 {
+  color: #222831;
+}
+
+/* PROJECTS */
+.color-container {
+  background: #FFFFFF;
+  border: 1px solid #79A8AE;
+}
+
+.project-title {
+  color: #31363F;
+}
+
+.project-btn {
+  border: 2px solid #79A8AE;
+  color: #31363F;
+}
+
+.project-btn:hover {
+  background: #79A8AE;
+  color: #EEEEEE;
+}
+
+/* CONTACTS */
+.contacts-info-upper-container {
+  background: #79A8AE;
+  border: 1px solid #31363F;
+  color: #EEEEEE;
+}
+
+.contacts-info-container a {
+  color: #222831;
+}
+
+.contacts-info-container a:hover {
+  color: #EEEEEE;
+}
+
+/* FOOTER */
+footer {
+  background: #222831;
+  color: #EEEEEE;
+}
+
+footer a {
+  color: #79A8AE;
+}
+
+footer a:hover {
+  color: #EEEEEE;
+}
+
+
+/* ================= SKILLS SECTION ================= */
+#skills {
+  position: relative;
+  padding-top: 4vh;
+  margin: 0 10rem;
+  height: fit-content;
+  min-height: 60vh;
+}
+
+.skills-section {
+  padding: 20px;
+  text-align: center; /* keeps section title & intro centered */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Category Card */
+.skills-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center; /* default center for logos */
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ✅ only card headings aligned left */
+.skills-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-align: left; 
+  color: #333;
+}
+
+/* Logo Grid inside each card */
+.skills-logo-grid {
+  display: grid;
+  gap: 20px;
+  justify-items: center; /* keep logos centered */
+}
+
+.skills-logo-grid.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-logo-grid.four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-logo {
+  width: 150px;   /* bigger logos */
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.skill-logo:hover {
+  background-color: rgba(255, 193, 7, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+  transform: scale(1.1);
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-logo-grid.three-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skill-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+
+
+/* Skill Item Container */
+.skill-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  --skill-color: #555; /* default color if none is set */
+}
+
+/* Logo Styling with Dynamic Border */
+.skill-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  border: 3px solid var(--skill-color);
+  border-radius: 12px;
+  padding: 6px;
+}
+
+/* Tooltip (Hidden by default) */
+.skill-name {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--skill-color);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* Show Tooltip on Hover */
+.skill-item:hover .skill-name {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Slight Hover Effect on Logos */
+.skill-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--skill-color);
+}
+
+
+/* Tooltip arrow */
+.skill-name::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+}
+
+
+
