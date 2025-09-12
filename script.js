@@ -4,3 +4,9 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+document.querySelectorAll(".article-container.double-img img").forEach(img => {
+  img.addEventListener("click", () => {
+    img.classList.toggle("zoomed"); // toggle zoom on/off
+  });
+});
