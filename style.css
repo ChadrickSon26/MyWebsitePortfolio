@@ -168,8 +168,10 @@ section {
 #profile {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  align-items: center; /* vertically center */
+  gap: 1rem;
   height: 80vh;
+  text-align: left; /* so text aligns properly */
 }
 
 .section__pic-container {
@@ -181,7 +183,8 @@ section {
 
 .section__text {
   align-self: center;
-  text-align: center;
+  text-align: left; /* text stays left-aligned beside pic */
+  max-width: 600px; /* prevents text from stretching too wide */
 }
 
 .section__text p {
@@ -193,7 +196,7 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   margin-bottom: 1rem;
 }
 
@@ -213,7 +216,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 /* BUTTONS */
@@ -267,7 +270,7 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .about-wrapper {
@@ -283,7 +286,7 @@ section {
   width: 300px;
   height: auto;
   border-radius: 2rem;
-  border: 2px solid #ccc;
+  border: 3px solid #ccc;
   object-fit: cover;
 }
 
@@ -308,14 +311,14 @@ section {
   padding: 1.5rem;
   background: #fff;
   border-radius: 1.5rem;
-  border: 1px solid rgb(163, 163, 163);
+  border: 2px solid rgb(163, 163, 163);
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .info-box img.icon {
   width: 40px;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 /* About Text */
@@ -621,7 +624,7 @@ footer p {
 .about-pic:hover,
 .project-img:hover {
   background-color: rgba(0, 123, 255, 0.15); /* soft blue glow */
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 4px 50px rgba(0, 123, 255, 0.15);
   transform: scale(1.05); /* slight zoom */
 }
 
@@ -1038,3 +1041,6 @@ footer a:hover {
   justify-content: center;
   gap: 1rem;
 }
+
+
+
