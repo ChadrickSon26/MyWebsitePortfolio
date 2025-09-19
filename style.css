@@ -877,20 +877,3 @@ body.dark-theme .skill-name {
 }
 
 
-/* Profile picture container */
-.section__pic-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 280px;   /* maximum size */
-  width: 100%;
-  margin: 0 auto 2rem;
-}
-
-.section__pic-container img {
-  width: 1000%;
-  height: auto;
-  border-radius: 50%;       /* circle effect */
-  object-fit: cover;
-  max-width: 400px;         /* cap image size */
-}
