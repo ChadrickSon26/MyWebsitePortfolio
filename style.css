@@ -743,3 +743,135 @@ footer a:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px #79A8AE;
 }
+
+
+
+/* Reveal Animations */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode */
+body.dark-theme {
+  background-color: #222831;
+  color: #eeeeee;
+}
+body.dark-theme nav {
+  background-color: #111418;
+}
+body.dark-theme .skills-card,
+body.dark-theme .details-container,
+body.dark-theme .info-box {
+  background: #2c2f36;
+  color: #eeeeee;
+}
+#theme-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #79a8ae;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Scroll to top */
+#scroll-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #79a8ae;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Modal Preview */
+#img-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#img-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+#close-modal {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* ==================================================
+   DARK MODE FIXES FOR SKILLS, PROJECTS, ABOUT & EXPERIENCE
+================================================== */
+
+/* Skills section headings */
+body.dark-theme .skills-card h3 {
+  color: #f5f5f5;
+}
+
+/* Skills section skill labels */
+body.dark-theme .skill-name {
+  background: var(--skill-color);
+  color: #fff;
+}
+
+/* Project section titles */
+body.dark-theme .project-title {
+  color: #f5f5f5;
+}
+
+/* Project card buttons (contrast tweak) */
+body.dark-theme .project-btn {
+  border-color: #79a8ae;
+  color: #f5f5f5;
+}
+body.dark-theme .project-btn:hover {
+  background: #79a8ae;
+  color: #1e1e1e;
+}
+
+/* About section headings */
+body.dark-theme .about-details-container h3 {
+  color: #f5f5f5;
+}
+
+/* Experience section headings */
+body.dark-theme .experience-details-container h3 {
+  color: #f5f5f5;
+}
+
+
+
+
+/* Skills section skill labels (keep original colors in dark mode) */
+body.dark-theme .skill-name {
+  background: var(--skill-color);
+  color: #fff;
+}
